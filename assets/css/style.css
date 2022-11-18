@@ -1,3 +1,36 @@
 body {
-    background-color: red;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr auto;
+}
+
+/* Navbar */
+.offcanvas-title {
+    font-size: 2em;
+}
+
+ul.navbar-nav {
+    height: 98%;
+    font-size: 1.5em;
+}
+
+.push-down {
+    margin-top: auto;
+}
+
+/* Main content */
+main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#play {
+    width: 100%;
+    margin: 1em auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
 }
