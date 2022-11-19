@@ -30,6 +30,14 @@ let songArr = [
         otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
     },
     {
+        song: "Black Velvet Band",
+        src: "https://www.youtube.com/embed/YytdBDpVSHc",
+        difficulty: "easy",
+        numberOfAnswers: 5,
+        correctAnswer: "3/4",
+        otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
+    },
+    {
         song: "Left Side",
         src: "https://www.youtube.com/embed/xAOkYFZvqDQ",
         difficulty: "easy",
@@ -63,7 +71,7 @@ let songArr = [
     },
     {
         song: "Electric Feel",
-        src: "https://www.youtube.com/embed/MmZexg8sxyk",
+        src: "https://www.youtube.com/embed/fbkv5xOLvnA",
         difficulty: "easy",
         numberOfAnswers: 8,
         correctAnswer: "6/4",
