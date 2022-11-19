@@ -6,6 +6,7 @@ const answersEl = document.getElementById('answer-container')
 const resultsScreen = document.getElementById('results-screen')
 const rightWrongEl = document.getElementById('right-wrong')
 const scoreCounter = document.getElementById('score-counter')
+const questionsCount = document.getElementById('questions-count')
 
 let correctAnswer;
 let currentQuestion = 0
@@ -54,6 +55,9 @@ let songArr = [
     },
 ]
 
+// Shows the current question number
+questionsCount.innerHTML = " 1 / " + songArr.length
+
 function setSong(song) {
     videoContainer.innerHTML = `
     <iframe id="video" width="560" height="315" src="${song.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
@@ -99,6 +103,8 @@ function checkAnswer(e) {
     }
     
 currentQuestion += 1
+questionsCount.innerHTML = (currentQuestion+1) + " / " + songArr.length
+
 
 videoContainer.innerHTML = ''
 answersEl.innerHTML = ''
