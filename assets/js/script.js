@@ -25,9 +25,9 @@ let songArr = [
         song: "Game Of Thrones theme",
         src: "https://www.youtube.com/embed/F6SxzmEOHMI",
         difficulty: "easy",
-        numberOfAnswers: 6,
+        numberOfAnswers: 5,
         correctAnswer: "3/4",
-        otherAnswers: ["4/4", "6/8", "4/3", "4/3", "6/3"],
+        otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
     },
     {
         song: "Left Side",
@@ -52,6 +52,22 @@ let songArr = [
         numberOfAnswers: 6,
         correctAnswer: "2/2",
         otherAnswers: ["3/4", "6/8", "4/3", "4/4", "4/8"],
+    },
+    {
+        song: "Money",
+        src: "https://www.youtube.com/embed/cpbbuaIA3Ds",
+        difficulty: "easy",
+        numberOfAnswers: 6,
+        correctAnswer: "7/4",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2"],
+    },
+    {
+        song: "Electric Feel",
+        src: "https://www.youtube.com/embed/MmZexg8sxyk",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "6/4",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
     },
 ]
 
