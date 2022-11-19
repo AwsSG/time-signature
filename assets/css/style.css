@@ -18,6 +18,61 @@ ul.navbar-nav {
     margin-top: auto;
 }
 
+.custom-toggler {
+    position: relative;
+    width: 50px;
+    height: 32px;
+}
+
+.custom-toggler * {
+    margin: 0;
+    padding: 0;
+}
+.custom-toggler:focus {
+    outline: 1px solid grey;
+}
+
+.navbar-toggler-clef {
+    position: relative;
+    padding: 0;
+}
+
+.navbar-toggler-clef > img {
+    width: 44px;
+    margin: 0;
+    position: absolute;
+    top: -20px;
+    left: -22px;
+}
+
+.music-sheet {
+    --color: rgb(156, 155, 155);
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    width: 40px;
+    height: 6px;
+    border-block: 2px solid var(--color);
+}
+
+.music-sheet::before,
+.music-sheet::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color);
+}
+
+.music-sheet::after {
+    height: 6px;
+    background-color: transparent;
+    top: 6px;
+    border-block: 2px solid var(--color);
+}
+
 /* Main content */
 main {
     display: grid;
