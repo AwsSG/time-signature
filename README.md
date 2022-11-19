@@ -37,35 +37,35 @@
 <details>
 <summary>Landing page</summary>
 
-![Landing Page](media/wireframes/landing-page.png)
+![Landing Page](assets/media/wireframes/landing-page.png)
 
 </details>
 
 <details>
 <summary>Game page</summary>
 
-![Game Page](media/wireframes/game-page.png)
+![Game Page](assets/media/wireframes/game-page.png)
 
 </details>
 
 <details>
 <summary>Side menu</summary>
 
-![Side Menu](media/wireframes/menu.png)
+![Side Menu](assets/media/wireframes/menu.png)
 
 </details>
 
 <details>
 <summary>Cheatsheets</summary>
 
-![Cheatsheets](media/wireframes/cheatsheets.png)
+![Cheatsheets](assets/media/wireframes/cheatsheets.png)
 
 </details>
 
 <details>
 <summary>Creators</summary>
 
-![Creators](media/wireframes/creators.png)
+![Creators](assets/media/wireframes/creators.png)
 
 </details>
 
@@ -117,3 +117,4 @@ The live link can be found here - [Live Website]()
   - CSS
   - JavaScript
   - Bootstrap
+
