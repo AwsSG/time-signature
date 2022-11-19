@@ -88,6 +88,8 @@ h2 {
 a {
     text-decoration: none;
     color: black;
+    border: 1px solid black;
+    padding: 2px;
 }
 
 /* -------------------------------- css styling for cards */
