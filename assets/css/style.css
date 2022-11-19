@@ -17,6 +17,13 @@ body {
     grid-template-rows: 1fr auto;
 }
 
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     font-size: 2rem;
     margin: 3rem;
