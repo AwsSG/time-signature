@@ -37,7 +37,9 @@
 <details>
 <summary>Landing page</summary>
 
+
 ![Landing Page](assets/media/wireframes/landing-page.png)
+
 
 </details>
 
@@ -50,6 +52,7 @@
 
 <details>
 <summary>Side menu</summary>
+
 
 ![Side Menu](assets/media/wireframes/menu.png)
 
@@ -117,4 +120,3 @@ The live link can be found here - [Live Website]()
   - CSS
   - JavaScript
   - Bootstrap
-
