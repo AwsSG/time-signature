@@ -55,20 +55,39 @@
     <div class="game-container">
       <div id="questions-count"></div>
 
-        <h2>Can you guess the time signature?</h2>
+      <div id="flip-container">
+        <div id="flipcard">
+          <h2>Correct answer: <span id="correct-answer"></span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Numquam consectetur at fugiat iusto tempore iure, 
+            recusandae explicabo nostrum deserunt quaerat cum, animi 
+            aperiam,nulla mollitia non ut quisquam! Nemo, totam.
+          </p>
 
-        <div class="video-container" id="video-container">
-            <iframe id="video" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-        </div>
+          <button id="next" class="btn btn-primary">Next</button>
 
-        <div class="answers-container" id="answer-container">
         </div>
+        <div id="flip-video">
+          <h2>Can you guess the time signature?</h2>
 
-        <div class="results-screen" id="results-screen">
-            <h2 id="right-wrong">incorrect</h2>
-            <h3>Your current score is: <span id="score-counter">0</span></h3>
-            <h3>Get ready for the next question</h3>
+          <div class="video-container" id="video-container">
+              <iframe id="video" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+          </div>
         </div>
+      </div>
+
+
+
+      <div id="answers">
+          <div class="answers-container" id="answer-container">
+          </div>
+
+          <div class="results-screen" id="results-screen">
+              <h2 id="right-wrong">incorrect</h2>
+              <h3>Your current score is: <span id="score-counter">0</span></h3>
+              <h3>Get ready for the next question</h3>
+          </div>
+      </div>
     </div>
     
     <!-- Bootstrap 5 JavaScript Bundle with Popper -->
