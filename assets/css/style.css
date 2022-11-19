@@ -79,8 +79,15 @@ h2 {
 /* -------------------------------- css styling for cards */
 
 .card {
-    height: 12em;
+    padding: 1em;
+    min-width: 200px;
 }
+
+.creators-cards > div.card {
+    width: minmax(12em, 400px);
+    overflow: hidden;
+}
+
 
 /* Navbar */
 .offcanvas-title {
@@ -126,7 +133,7 @@ ul.navbar-nav {
 .music-sheet {
     --color: rgb(156, 155, 155);
     position: absolute;
-    top: -5px;
+    top: -6px;
     left: -8px;
     width: 40px;
     height: 6px;
@@ -153,13 +160,20 @@ ul.navbar-nav {
 
 /* Main content */
 main {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     align-items: center;
     justify-content: center;
 }
 
+.main-content {
+    max-width: 100%;
+}
+
 #play {
     width: 100%;
+    max-width: 200px;
     margin: 1em auto;
 }
 
