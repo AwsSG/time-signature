@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mr+Dafoe&family=Noto+Sans+Mende+Kikakui&display=swap);
+
 *,
 *::after,
 *::before {
@@ -15,6 +17,25 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: 1fr auto;
+    background-color: #25274D;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+}
+
+h1 {
+    font-family: 'Mr Dafoe', 'Great Views';
+    color: #2e9cca;
+    font-size: 7em;
+    text-align: center;
+}
+
+#how-to-play-logo {
+    padding: 50px 0 20px 0;
+}
+
+#starter-text {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 0 10px 0;
 }
 
 .game-container {
@@ -97,6 +118,21 @@ a {
 .card {
     padding: 1em;
     min-width: 200px;
+    background-color: #aaabb8;
+}
+
+.card-title {
+    color: #000;
+    font-size: 2em;
+}
+
+#main-text {
+    background-color: #fff;
+}
+
+.card-text {
+    color: #000;
+    font-size: 1.3em;
 }
 
 .creators-cards > div.card {
@@ -107,7 +143,18 @@ a {
 
 /* -------------------------------- Navbar */
 .offcanvas-title {
-    font-size: 2em;
+    font-size: 5.5em;
+    font-family: 'Mr Dafoe', 'Great Views';
+    color: #2e9cca;
+    text-align: center;
+}
+
+.offcanvas-body {
+    background-color: #25274D;
+}
+
+.nav-link {
+    color: #2e9cca;
 }
 
 ul.navbar-nav {
@@ -187,10 +234,56 @@ main {
     max-width: 100%;
 }
 
+#button-layout {
+    display: flex;
+}
+
 #play {
     width: 100%;
     max-width: 200px;
     margin: 1em auto;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.8em;
+    padding: 15px;
+    transition: 250ms;
+}
+
+#explination {
+    width: 100%;
+    max-width: 200px;
+    margin: 1em auto;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.8em;
+    padding: 15px;
+    transition: 250ms;
+}
+
+#play:hover {
+    width: 100%;
+    max-width: 200px;
+    margin: 1em auto;
+    font-size: 1.8em;
+    padding: 15px;
+    transition: 250ms;
+    background-color: #25274D;
+    border: #fff 1px solid;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#explination:hover {
+    width: 100%;
+    max-width: 200px;
+    margin: 1em auto;
+    font-size: 1.8em;
+    padding: 15px;
+    transition: 250ms;
+    background-color: #25274D;
+    border: #fff 1px solid;
+    color: #fff;
+    transform: scale(1.1);
 }
 
 /* -------------------------------- music banner image */
@@ -203,6 +296,12 @@ main {
 /* -------------------------------- Footer */
 footer {
     text-align: center;
+    background-color: #25274D;
+}
+
+footer > p {
+    font-size: 1.5em;
+    color: #fff;
 }
 
 #pause-play {
@@ -211,3 +310,28 @@ footer {
     border-radius: 50%;
 }
 
+/* -------------------------------- Answer buttons */
+
+.answer {
+    background-color: #fff;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+    font-size: 2em;
+}
+
+.answer:hover {
+    background-color: #25274D;
+    border: #fff 1px solid;
+    color: #fff;
+    transition: 250ms;
+    transform: scale(1.1);
+}
+
+/* -------------------------------- Creator page */
+
+#creator-layout {
+    padding: 100px 0 50px 0;
+}
+
+.creator-text {
+    color: #fff;
+}
