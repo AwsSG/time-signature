@@ -173,7 +173,6 @@ function shuffleArr(arr) {
            [array[temp], array[i]] = [array[i], array[temp]];
         }
 
-
        return array;
  }
 
