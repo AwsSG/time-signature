@@ -46,6 +46,14 @@ let songArr = [
         otherAnswers: ["3/4", "6/8", "4/3", "5/4"],
     },
     {
+        song: "Piano Man",
+        src: "https://www.youtube.com/embed/5HWmQxy5C-Y",
+        difficulty: "easy",
+        numberOfAnswers: 5,
+        correctAnswer: "3/4",
+        otherAnswers: ["4/4", "6/8", "4/3", "5/4"],
+    },
+    {
         song: "Take Five",
         src: "https://www.youtube.com/embed/V2QHW-pEUYE",
         difficulty: "easy",
@@ -76,6 +84,14 @@ let songArr = [
         numberOfAnswers: 8,
         correctAnswer: "6/4",
         otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
+    },
+    {
+        song: "We Are The Champions",
+        src: "https://www.youtube.com/embed/O71fetlkCZo",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "6/8",
+        otherAnswers: ["3/4", "12/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
     },
 ]
 
