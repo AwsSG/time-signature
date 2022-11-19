@@ -37,35 +37,35 @@
 <details>
 <summary>Landing page</summary>
 
-![Landing Page](assets/media/wireframes/landing-page.png)
+![Landing Page](media/wireframes/landing-page.png)
 
 </details>
 
 <details>
 <summary>Game page</summary>
 
-![Game Page](assets/media/wireframes/game-page.png)
+![Game Page](media/wireframes/game-page.png)
 
 </details>
 
 <details>
 <summary>Side menu</summary>
 
-![Side Menu](assets/media/wireframes/menu.png)
+![Side Menu](media/wireframes/menu.png)
 
 </details>
 
 <details>
 <summary>Cheatsheets</summary>
 
-![Cheatsheets](assets/media/wireframes/cheatsheets.png)
+![Cheatsheets](media/wireframes/cheatsheets.png)
 
 </details>
 
 <details>
 <summary>Creators</summary>
 
-![Creators](assets/media/wireframes/creators.png)
+![Creators](media/wireframes/creators.png)
 
 </details>
 
