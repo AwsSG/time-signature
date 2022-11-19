@@ -34,6 +34,41 @@
 
 ### Wireframes
 
+<details>
+<summary>Landing page</summary>
+
+![Landing Page](media/wireframes/landing-page.png)
+
+</details>
+
+<details>
+<summary>Game page</summary>
+
+![Game Page](media/wireframes/game-page.png)
+
+</details>
+
+<details>
+<summary>Side menu</summary>
+
+![Side Menu](media/wireframes/menu.png)
+
+</details>
+
+<details>
+<summary>Cheatsheets</summary>
+
+![Cheatsheets](media/wireframes/cheatsheets.png)
+
+</details>
+
+<details>
+<summary>Creators</summary>
+
+![Creators](media/wireframes/creators.png)
+
+</details>
+
 ## Features 
 
 ## Testing 
