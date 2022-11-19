@@ -68,6 +68,13 @@ h2 {
     margin: 2rem;
 }
 
+
+/* -------------------------------- css styling for cards */
+
+.card {
+    height: 12em;
+}
+
 /* Navbar */
 .offcanvas-title {
     font-size: 2em;
