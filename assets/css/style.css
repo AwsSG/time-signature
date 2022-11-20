@@ -69,7 +69,7 @@ h2 {
 #flipcard {
     width: 500px;
     max-width: 98vw;
-    height: 95%;
+    height: 100%;
     background-color: white;
     border: 1px solid grey;
     border-radius: 2rem;
@@ -78,7 +78,6 @@ h2 {
     position: absolute;
     inset: 0;
     transform: rotateY(90deg);
-    overflow-y: scroll;
 }
 
 #flipcard > h1 {
