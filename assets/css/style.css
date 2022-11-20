@@ -90,6 +90,10 @@ h2 {
     animation: flip-in 1s 1s ease-in forwards;
 }
 
+.correct-answer {
+    color: #000;
+}
+
 .video-container {
     background-color: black;
     height: fit-content;

@@ -148,11 +148,8 @@ function checkAnswer(e) {
 currentQuestion += 1
 answersEl.innerHTML = ''
 videoContainer.innerHTML = '' 
-correctAnswerCard.innerHTML = correctAnswer
-   
-    
-resultsScreen.style.display = 'flex'
 flipcard.classList.add('flip')
+correctAnswerCard.innerText = `${correctAnswer}`
 
 nextBtn.addEventListener("click", nextQuestion)
 
