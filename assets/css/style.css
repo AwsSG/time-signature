@@ -29,6 +29,8 @@ h2 {
     margin: 3rem;
 }
 
+/* -------------------------------- css styling for game page */
+
 #questions-count {
     width: 80%;
     margin-top: 50px;
@@ -36,10 +38,67 @@ h2 {
     text-align: right;
 }
 
-.video-container {
+#flip-container {
+    width: 98vw;
+    position: relative;
+    text-align: center;
+}
+
+#flipcard {
+    width: 500px;
     max-width: 98vw;
+    height: 95%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 2rem;
+    padding: 1em;
+    font-size: 2em; 
+    margin: 10px auto;
+    position: absolute;
+    inset: 0;
+    transform: rotateY(90deg);
+}
+
+.flip > div:first-child {
+    animation: flip-in 1s 1s ease-in forwards;
+}
+
+.video-container {
+    background-color: black;
+    height: fit-content;
+    min-height: 300px;
+    width: 500px;
+    max-width: 98vw;
+    margin: 0 auto;
     border-radius: 2rem;
     overflow: hidden;
+    transform: rotateY(0deg);
+}
+
+.flip > div:nth-child(2) {
+    animation: flip-out 1s ease-in forwards;
+}
+
+@keyframes flip-in {
+    from {
+        transform: rotateY(90deg);
+    }
+    to {
+        transform: rotateY(0);
+    }
+}
+
+@keyframes flip-out {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+#answers {
+    position: relative;
 }
 
 .answers-container {
@@ -61,16 +120,6 @@ h2 {
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
-    .answer {
-        width: 80%;
-        margin: 5px;
-  }
-    #questions-count {
-        font-size: 2em;
-    }
-}
-
 .answer:hover,
 .answer:focus {
     background-color: rgb(177, 213, 223);
@@ -82,12 +131,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    z-index: 3;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #fff;
 }
 
@@ -229,5 +274,15 @@ footer {
     border-radius: 50%;
 }
 
+/* -------------------------------- Media Queries */
 
+@media screen and (max-width: 400px) {
+    .answer {
+        width: 80%;
+        margin: 5px;
+  }
+    #questions-count {
+        font-size: 2em;
+    }
+}
 

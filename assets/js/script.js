@@ -5,8 +5,11 @@ const video = document.getElementById('video')
 const answersEl = document.getElementById('answer-container')
 const resultsScreen = document.getElementById('results-screen')
 const rightWrongEl = document.getElementById('right-wrong')
+const correctAnswerCard = document.getElementById('correct-answer')
 const scoreCounter = document.getElementById('score-counter')
 const questionsCount = document.getElementById('questions-count')
+const flipcard = document.getElementById('flip-container')
+const nextBtn = document.getElementById('next')
 
 let correctAnswer;
 let currentQuestion = 0
@@ -143,21 +146,24 @@ function checkAnswer(e) {
     }
     
 currentQuestion += 1
-questionsCount.innerHTML = (currentQuestion+1) + " / " + songArr.length
-
-
-videoContainer.innerHTML = ''
 answersEl.innerHTML = ''
-    
+videoContainer.innerHTML = '' 
+correctAnswerCard.innerHTML = correctAnswer
+   
     
 resultsScreen.style.display = 'flex'
+flipcard.classList.add('flip')
 
-setTimeout(() => {
+nextBtn.addEventListener("click", nextQuestion)
+
+}
+
+// Go to next question
+function nextQuestion() {
     setSong(songArr[currentQuestion])
     resultsScreen.style.display = 'none'
-}
-,2000)
- 
+    flipcard.classList.remove('flip')
+    questionsCount.innerHTML = (currentQuestion+1) + " / " + songArr.length
 }
 
 // Fisher Yates shuffle to arrange question buttons randomly
@@ -169,11 +175,8 @@ function shuffleArr(arr) {
            let temp = Math.floor(Math.random() * (i + 1));
            [array[temp], array[i]] = [array[i], array[temp]];
         }
-
-
        return array;
- }
-
+    }
 }
 
 setSong(songArr[currentQuestion])
