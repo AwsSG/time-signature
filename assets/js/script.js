@@ -134,28 +134,30 @@ function setSong(song) {
 
 // function to check if answer is correct or incorrect applied through above for each loop
 function checkAnswer(e) {
- if (e.target.innerText == correctAnswer) {
-     score += 1
-
-     rightWrongEl.innerText = "Correct!" 
-     scoreCounter.innerText = score
-     
-    } else {
+    if (e.target.innerText == correctAnswer) {
+        score += 1
+        rightWrongEl.innerText = "Correct!" 
+        scoreCounter.innerText = score
+     } else {
         rightWrongEl.innerText = "Incorrect!" 
         scoreCounter.innerText = score
     }
-    
-currentQuestion += 1
-answersEl.innerHTML = ''
-videoContainer.innerHTML = '' 
-correctAnswerCard.innerHTML = correctAnswer
-   
-    
-resultsScreen.style.display = 'flex'
-flipcard.classList.add('flip')
 
-nextBtn.addEventListener("click", nextQuestion)
+    videoContainer.innerHTML = '' 
+    answersEl.innerHTML = ''
 
+    if (currentQuestion == songArr.length-1) {
+        alert('finish')
+
+    } else {
+        currentQuestion += 1
+        
+        correctAnswerCard.innerHTML = correctAnswer
+            
+        resultsScreen.style.display = 'flex'
+        flipcard.classList.add('flip')
+        nextBtn.addEventListener("click", nextQuestion)
+    }
 }
 
 // Go to next question
