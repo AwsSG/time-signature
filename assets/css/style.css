@@ -32,10 +32,11 @@ h1 {
     padding: 50px 0 20px 0;
 }
 
-#starter-text {
+.starter-text {
     color: #fff;
     font-size: 1.5em;
     padding: 10px 0 10px 0;
+    text-align: center;
 }
 
 .game-container {
@@ -109,7 +110,6 @@ h2 {
 a {
     text-decoration: none;
     color: black;
-    border: 1px solid black;
     padding: 2px;
 }
 
@@ -234,22 +234,15 @@ main {
     max-width: 100%;
 }
 
-#button-layout {
+#explination-layout {
     display: flex;
 }
 
-#play {
-    width: 100%;
-    max-width: 200px;
-    margin: 1em auto;
-    background-color: #fff;
-    color: #000;
-    font-size: 1.8em;
-    padding: 15px;
-    transition: 250ms;
+#play-layout {
+    text-align: center;
 }
 
-#explination {
+#play {
     width: 100%;
     max-width: 200px;
     margin: 1em auto;
@@ -273,17 +266,14 @@ main {
     transform: scale(1.1);
 }
 
-#explination:hover {
-    width: 100%;
-    max-width: 200px;
-    margin: 1em auto;
-    font-size: 1.8em;
-    padding: 15px;
-    transition: 250ms;
-    background-color: #25274D;
-    border: #fff 1px solid;
+#click-here {
+    text-decoration: underline;
     color: #fff;
-    transform: scale(1.1);
+}
+
+#click-here:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* -------------------------------- music banner image */
