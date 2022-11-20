@@ -10,7 +10,6 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
 }
 
 body {
@@ -24,7 +23,7 @@ body {
 h1 {
     font-family: 'Mr Dafoe', 'Great Views';
     color: #2e9cca;
-    font-size: 7em;
+    font-size: 4em;
     text-align: center;
 }
 
@@ -39,7 +38,7 @@ h2 {
 
 .starter-text {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 10px 0 10px 0;
     text-align: center;
 }
@@ -52,7 +51,7 @@ h2 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8em;
     margin: 3rem;
 }
 
@@ -61,7 +60,7 @@ h2 {
 #questions-count {
     width: 80%;
     margin-top: 50px;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: right;
     color: white;
 }
@@ -80,7 +79,6 @@ h2 {
     border: 1px solid grey;
     border-radius: 2rem;
     padding: 1em;
-    font-size: 2em; 
     margin: 10px auto;
     position: absolute;
     inset: 0;
@@ -149,36 +147,42 @@ h2 {
     }
 }
 
-#answers {
-    position: relative;
-}
-
 .answers-container {
     max-width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 
 .answer {
-    width: 40%;
-    padding: 2rem 3rem;
+    background-color: #fff;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+    font-size: 1.8em;
+    width: 35%;
+    padding: 0.8em;
     margin: 2rem;
-    font-size: 2rem;
     text-align: center;
     border: 1px solid #000;
-    border-radius: 2rem;
+    border-radius: .8em;
     cursor: pointer;
+}
+
+.answer:hover {
+    background-color: #25274D;
+    border: #fff 1px solid;
+    color: #fff;
+    transition: 250ms;
+    transform: scale(1.1);
 }
 
 .results-screen {
     display: none;
     color: #fff;
-    font-size: 3em;
-    margin: 2em;
+    font-size: 1.8em;
+    margin: 1em;
 }
-
 
 /* -------------------------------- css styling for cards */
 
@@ -192,13 +196,17 @@ a {
 
 .card {
     padding: 1em;
-    min-width: 200px;
+    min-width: 300px;
     background-color: #aaabb8;
 }
 
 .card-title {
     color: #000;
-    font-size: 2em;
+    font-size: 1.8em;
+}
+
+h5.card-title {
+    font-size: 1.5em;
 }
 
 #main-text {
@@ -207,7 +215,6 @@ a {
 
 .card-text {
     color: #000;
-    font-size: 1.3em;
 }
 
 .creators-cards > div.card {
@@ -215,10 +222,9 @@ a {
     overflow: hidden;
 }
 
-
 /* -------------------------------- Navbar */
 .offcanvas-title {
-    font-size: 5.5em;
+    font-size: 3em;
     font-family: 'Mr Dafoe', 'Great Views';
     color: #2e9cca;
     text-align: center;
@@ -233,11 +239,27 @@ a {
     background-color: #25274D;
 }
 
+.offcanvas-header > button.btn-close {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    background-image: none;
+}
+
 .nav-link {
     color: #fff;
     font-size: 25px;
     padding: 30px 15px 30px 15px;
     font-family: 'Noto Sans Mende Kikakui', sans-serif;
+}
+
+.navbar-nav .nav-link.active {
+    color: #2e9cca;
+    opacity: .6;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2e9cca;
 }
 
 ul.navbar-nav {
@@ -307,6 +329,7 @@ ul.navbar-nav {
 /* -------------------------------- Main content */
 main {
     width: 90%;
+    max-width: 800px;
     margin: 0 auto;
     margin-top: 30px;
     display: grid;
@@ -334,7 +357,7 @@ main {
     margin: 1em auto;
     background-color: #fff;
     color: #000;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding: 15px;
     transition: 250ms;
 }
@@ -394,7 +417,7 @@ footer {
 }
 
 footer > p {
-    font-size: 1.5em;
+    font-size: 0.9em;
     color: #fff;
 }
 
@@ -402,22 +425,6 @@ footer > p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-/* -------------------------------- Answer buttons */
-
-.answer {
-    background-color: #fff;
-    font-family: 'Noto Sans Mende Kikakui', sans-serif;
-    font-size: 2em;
-}
-
-.answer:hover {
-    background-color: #25274D;
-    border: #fff 1px solid;
-    color: #fff;
-    transition: 250ms;
-    transform: scale(1.1);
 }
 
 /* -------------------------------- Creator page */
