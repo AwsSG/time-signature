@@ -114,7 +114,7 @@ function setSong(song) {
 
     //Inserting Questions Into DOM 
     for (let i = 0; i < song.numberOfAnswers; i++) {
-        answersEl.innerHTML += `<div class="answer">${answers[i]}</div>`
+        answersEl.innerHTML += `<div class="answer" tabindex="0">${answers[i]}</div>`
     }
 
     //Then making array here so for each and event listeners can be applied 
