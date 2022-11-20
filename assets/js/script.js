@@ -10,6 +10,8 @@ const scoreCounter = document.getElementById('score-counter')
 const questionsCount = document.getElementById('questions-count')
 const flipcard = document.getElementById('flip-container')
 const nextBtn = document.getElementById('next')
+const finalScore = document.getElementById('final-score')
+const showFinal = document.querySelectorAll('.final')
 
 let correctAnswer;
 let currentQuestion = 0
@@ -125,8 +127,6 @@ function setSong(song) {
 
     answerBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            console.log('hi')
-            console.log(correctAnswer)
             checkAnswer(e)
         })
     })
@@ -134,28 +134,36 @@ function setSong(song) {
 
 // function to check if answer is correct or incorrect applied through above for each loop
 function checkAnswer(e) {
- if (e.target.innerText == correctAnswer) {
-     score += 1
-
-     rightWrongEl.innerText = "Correct!" 
-     scoreCounter.innerText = score
-     
-    } else {
+    if (e.target.innerText == correctAnswer) {
+        score += 1
+        rightWrongEl.innerText = "Correct!" 
+        scoreCounter.innerText = score
+        flipcard.classList.add('correct')
+     } else {
         rightWrongEl.innerText = "Incorrect!" 
         scoreCounter.innerText = score
+        flipcard.classList.add('incorrect')
     }
-    
-currentQuestion += 1
-answersEl.innerHTML = ''
-videoContainer.innerHTML = '' 
-correctAnswerCard.innerHTML = correctAnswer
-   
-    
-resultsScreen.style.display = 'flex'
-flipcard.classList.add('flip')
 
-nextBtn.addEventListener("click", nextQuestion)
+    videoContainer.innerHTML = '' 
+    answersEl.innerHTML = ''
 
+    if (currentQuestion == songArr.length-1) {
+        resultsScreen.style.display = 'none'
+        finalScore.innerHTML = "Your final score is: " + score
+        nextBtn.style.display = "none"
+        showFinal.forEach(item => {
+            item.style.display = "block"
+        })
+
+    } else {
+        currentQuestion += 1
+        resultsScreen.style.display = 'flex'
+    }
+
+    correctAnswerCard.innerHTML = correctAnswer 
+    flipcard.classList.add('flip')
+    nextBtn.addEventListener("click", nextQuestion)
 }
 
 // Go to next question
@@ -163,6 +171,8 @@ function nextQuestion() {
     setSong(songArr[currentQuestion])
     resultsScreen.style.display = 'none'
     flipcard.classList.remove('flip')
+    flipcard.classList.remove('correct')
+    flipcard.classList.remove('incorrect')
     questionsCount.innerHTML = (currentQuestion+1) + " / " + songArr.length
 }
 

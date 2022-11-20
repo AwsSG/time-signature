@@ -63,6 +63,7 @@ h2 {
     margin-top: 50px;
     font-size: 3em;
     text-align: right;
+    color: white;
 }
 
 #flip-container {
@@ -84,6 +85,30 @@ h2 {
     position: absolute;
     inset: 0;
     transform: rotateY(90deg);
+}
+
+#flipcard > h1 {
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+    font-size: 2em;
+}
+#flip-container.correct > #flipcard {
+    border: 3px solid limegreen;
+}
+
+#flip-container.correct h1 {
+    color: limegreen;
+}
+
+#flip-container.incorrect > #flipcard {
+    border: 3px solid rgb(235, 30, 64);
+}
+
+#flip-container.incorrect h1 {
+    color: rgb(235, 30, 64);
+}
+
+#flipcard > hr {
+    margin: 2em 1em;
 }
 
 .flip > div:first-child {
@@ -147,29 +172,11 @@ h2 {
     cursor: pointer;
 }
 
-.answer:hover,
-.answer:focus {
-    background-color: rgb(177, 213, 223);
-    outline: none;
-}
-
 .results-screen {
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100vw;
-    background-color: #fff;
-}
-
-.results-screen h2 {
-    font-size: 4rem;
-}
-
-.results-screen h3 {
-    font-size: 3rem;
-    margin: 2rem;
+    color: #fff;
+    font-size: 3em;
+    margin: 2em;
 }
 
 
@@ -319,7 +326,9 @@ main {
     text-align: center;
 }
 
-#play {
+#play,
+#next,
+#play-again {
     width: 100%;
     max-width: 200px;
     margin: 1em auto;
@@ -330,17 +339,35 @@ main {
     transition: 250ms;
 }
 
-#play:hover {
+#play:hover,
+#play:focus,
+#next:hover,
+#next:focus,
+#play-again:hover,
+#play-again:focus {
     width: 100%;
     max-width: 200px;
     margin: 1em auto;
-    font-size: 1.8em;
     padding: 15px;
     transition: 250ms;
     background-color: #25274D;
     border: #fff 1px solid;
     color: #fff;
     transform: scale(1.1);
+}
+
+#next,
+#play-again {
+    font-size: 1.3em;
+}
+
+.final {
+    display: none;
+}
+
+#final-score {
+    font-size: 1.5em;
+    color: #000;
 }
 
 #click-here {

@@ -60,14 +60,20 @@
 
       <div id="flip-container">
         <div id="flipcard">
-          <h2>Correct answer: <span id="correct-answer"></span></h2>
+          <h1 id="right-wrong"></h1>
+          <p>Correct answer: <span id="correct-answer"></span></p>
+
+          <hr>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Numquam consectetur at fugiat iusto tempore iure, 
             recusandae explicabo nostrum deserunt quaerat cum, animi 
             aperiam,nulla mollitia non ut quisquam! Nemo, totam.
           </p>
 
+          <h2 id="final-score" class="final"></h2>
+
           <button id="next" class="btn btn-primary">Next</button>
+          <a id="play-again" href="game.html" type="button" class="btn btn-primary final">Play Again</a>
 
         </div>
         <div id="flip-video">
@@ -86,16 +92,12 @@
         </div>
       </div>
 
-
-
       <div id="answers">
           <div class="answers-container" id="answer-container">
           </div>
 
           <div class="results-screen" id="results-screen">
-              <h2 id="right-wrong">incorrect</h2>
-              <h3>Your current score is: <span id="score-counter">0</span></h3>
-              <h3>Get ready for the next question</h3>
+              <p>Your current score is: <span id="score-counter">0</span></p>
           </div>
       </div>
     </div>
