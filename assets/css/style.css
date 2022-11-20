@@ -91,6 +91,21 @@ h2 {
     font-family: 'Noto Sans Mende Kikakui', sans-serif;
     font-size: 2em;
 }
+#flip-container.correct > #flipcard {
+    border: 3px solid limegreen;
+}
+
+#flip-container.correct h1 {
+    color: limegreen;
+}
+
+#flip-container.incorrect > #flipcard {
+    border: 3px solid rgb(235, 30, 64);
+}
+
+#flip-container.incorrect h1 {
+    color: rgb(235, 30, 64);
+}
 
 #flipcard > hr {
     margin: 2em 1em;
@@ -159,13 +174,9 @@ h2 {
 
 .results-screen {
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100vw;
-    background-color: #fff;
+    color: #fff;
     font-size: 3em;
+    margin: 2em;
 }
 
 
@@ -354,6 +365,10 @@ main {
     display: none;
 }
 
+#final-score {
+    font-size: 1.5em;
+    color: #000;
+}
 
 #click-here {
     text-decoration: underline;
