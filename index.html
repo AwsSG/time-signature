@@ -12,15 +12,15 @@
     <!-- links html to the css file in the assets folder -->
     <link rel="stylesheet" href="/assets/css/style.css">
 
-    <link rel="icon" type="image/x-icon" href="assets/icons/treble-clef.png" />
 
-    <title>Time Signature</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/treble-clef.png" />
+    <title class="font">Time Signature</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid" id="bg-colour">
           <button class="btn custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <div class="navbar-toggler-clef">
               <span class="music-sheet"></span>
@@ -57,9 +57,12 @@
       <main>
         <div class="container-fluid main-content">
             <h1>Time Signature</h1>
-            <p>Before getting started check out Time Signatures explained for a better understanding!</p>
-            <a href="explanation.html">Check it out here!</a><br>
+            <p class="starter-text">Before getting started <a href="explanation.html" id="click-here">click here</a> to check out Time Signatures explained for a better understanding.<br>Or if you're feeling brave, jump straight in with the button below!</p>
+          <div id="explination-layout">
+            </div>
+            <div id="play-layout">
             <a id="play" href="game.html" type="button" class="btn btn-primary" >Play</a>
+          </div>
         </div>
       </main>
 
