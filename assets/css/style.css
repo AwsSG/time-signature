@@ -28,6 +28,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: #fff;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+}
+
 #how-to-play-logo {
     padding: 50px 0 20px 0;
 }
@@ -147,14 +152,22 @@ a {
     font-family: 'Mr Dafoe', 'Great Views';
     color: #2e9cca;
     text-align: center;
+    padding-left: 15px;
 }
 
 .offcanvas-body {
     background-color: #25274D;
 }
 
+.offcanvas-header {
+    background-color: #25274D;
+}
+
 .nav-link {
-    color: #2e9cca;
+    color: #fff;
+    font-size: 25px;
+    padding: 30px 15px 30px 15px;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
 }
 
 ul.navbar-nav {
