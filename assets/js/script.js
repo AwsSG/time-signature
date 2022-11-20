@@ -155,12 +155,15 @@ resultsScreen.style.display = 'flex'
 flipcard.classList.add('flip')
 
 nextBtn.addEventListener("click", nextQuestion)
+
+}
+
+// Go to next question
 function nextQuestion() {
     setSong(songArr[currentQuestion])
     resultsScreen.style.display = 'none'
     flipcard.classList.remove('flip')
     questionsCount.innerHTML = (currentQuestion+1) + " / " + songArr.length
-    }
 }
 
 // Fisher Yates shuffle to arrange question buttons randomly
@@ -172,10 +175,8 @@ function shuffleArr(arr) {
            let temp = Math.floor(Math.random() * (i + 1));
            [array[temp], array[i]] = [array[i], array[temp]];
         }
-
        return array;
- }
-
+    }
 }
 
 setSong(songArr[currentQuestion])
