@@ -22,4 +22,11 @@ Once on the page you click the "play" button at the bottom of the landing page o
 
 ## Credits
 
-Treble Clef icon by [Icons8](https://icons8.com/icon/mwHGeE4mJtWI/treble-clef)
+Team members:
+- Aws Sabah Gheni
+- Eoghan Behan
+- Elisa Sacchelli
+- Jack Crosbie
+- Dan Santino Jones
+ 
+
