@@ -69,7 +69,7 @@ h2 {
 #flipcard {
     width: 500px;
     max-width: 98vw;
-    height: 100%;
+    height: 50%;
     background-color: white;
     border: 1px solid grey;
     border-radius: 2rem;

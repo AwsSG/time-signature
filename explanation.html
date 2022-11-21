@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 
 
-    <title>Time Signature</title>
+    <title>Tempo</title>
 
 </head>
 
@@ -21,12 +21,13 @@
     <!-- Navbar -->
     <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
-            <button class="btn custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="btn custom-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <div class="navbar-toggler-clef">
-                  <span class="music-sheet"></span>
-                  <img src="assets/icons/treble-clef.png" alt="Treble celf icon">
-                </div>   
-              </button>
+                    <span class="music-sheet"></span>
+                    <img src="assets/icons/treble-clef.png" alt="Treble celf icon">
+                </div>
+            </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -36,18 +37,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="game.html">Play Game</a>
-                          </li>
+                            <a class="nav-link" href="game.html">Play Game</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="explanation.html">Time Signatures Explained</a>
                         </li>
                         <li class="nav-item push-down d-flex">
                             <a class="nav-link" href="creators.html">Creators</a>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -56,14 +57,15 @@
 
     <!-- Main content -->
     <main>
-        <div class="container-fluid main-content backg-img">
+        <div class="container-fluid main-content">
             <div class="row">
                 <div class="col text-center mt-3">
                     <h1 id="how-to-play-logo">How To Play</h1>
-                    <div class="card text card-img" id="main-text"> 
+                    <div class="card text card-img" id="main-text">
                         <div class="card-body">
-                            <h2 class="card-title">What Are Time Signatures?</h2>
-                            <p class="card-text mt-4">A time signature tells you how music is to be counted. In essence how
+                            <h2 class="card-title font">What Are Time Signatures?</h2>
+                            <p class="card-text mt-4">A time signature tells you how music is to be counted. In essence
+                                how
                                 many
                                 beats or "seconds" in a bar pr measure. They are always shown as a "fraction" or stacked
                                 on
@@ -111,7 +113,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Signatures over 4</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">4/4, 3/4, 5/4, 7/4 and others</h6>
+                            <h6 class="card-subtitle mb-2 text-dark">4/4, 3/4, 5/4, 7/4 and others</h6>
                             <p class="card-text">4/4 means there's 4 beats in a bar or measure, think 1, 2 ,3, 4 or a
                                 drummer
                                 hitting his sticks to bring the band in at the start of a song.<br>
@@ -122,7 +124,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Time Signatures over 8</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">6/8, 7/8, 9/8, 12/8 and others</h6>
+                            <h6 class="card-subtitle mb-2 text-dark">6/8, 7/8, 9/8, 12/8 and others</h6>
                             <p class="card-text">A time signature of 6/8 means count 6 eighth notes to each bar. This is
                                 also a very often-used time signature. You would count the beat: 1, 2, 3, 4, 5, 6, 1, 2,
                                 3, 4, 5, 6, and so on…</p>
@@ -130,9 +132,67 @@
                     </div>
                 </div>
             </div>
+            <div class="card text card-img mt-4" id="main-text">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Check Out These Time Signature Examples</h2>
+                    <div class="row">
+                        <div class="col">
+                            <p class="card-text mt-4">
+                            <h5>Example of 4/4 Time <img
+                                    src="https://img.icons8.com/emoji/48/null/musical-notes-emoji.png" /></h5>
+                            <audio controls>
+                                <source src="/assets/media/audio_clips/4_4_time_signature_sample.mp3" type="audio/mpeg">
+                            </audio>
+                            </p>
+                            <p class="card-text mt-4">
+                            <h5>Example of 3/4 Time <img
+                                    src="https://img.icons8.com/emoji/48/null/musical-notes-emoji.png" /></h5>
+                            <audio controls>
+                                <source src="/assets/media/audio_clips/3_4_time_signature_exp.mp3" type="audio/mpeg">
+                            </audio>
+                            </p>
+                            <p class="card-text mt-4">
+                            <h5>Example of 5/4 Time <img
+                                    src="https://img.icons8.com/emoji/48/null/musical-notes-emoji.png" /></h5>
+                            <audio controls>
+                                <source src="/assets/media/audio_clips/5_4_time_signature_example.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="card-text mt-4">
+                            <h5>Example of 6/8 Time <img
+                                    src="https://img.icons8.com/emoji/48/null/musical-notes-emoji.png" /></h5>
+                            <audio controls>
+                                <source src="/assets/media/audio_clips/6_8_time_signature_example.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                            </p>
+                            <p class="card-text mt-4">
+                            <h5>Example of 9/8 Time <img
+                                    src="https://img.icons8.com/emoji/48/null/musical-notes-emoji.png" /></h5>
+                            <audio controls>
+                                <source src="/assets/media/audio_clips/9_8_time_signature_example.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                            </p>
+                            <p class="card-text mt-4">
+                            <h5>Example of 12/8 Time <img
+                                    src="https://img.icons8.com/emoji/48/null/musical-notes-emoji.png" /></h5>
+                            <audio controls>
+                                <source src="/assets/media/audio_clips/12_8_time_signature_example.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-            <div class="col text-center mt-3">
-                <a id="play" href="game.html" type="button" class="btn btn-primary" >Play</a>
+                <div class="col text-center mt-3">
+                    <a id="play" href="game.html" type="button" class="btn btn-primary">Play</a>
+                </div>
             </div>
         </div>
     </main>
