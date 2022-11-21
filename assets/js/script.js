@@ -59,82 +59,11 @@ let easyArr = [
         numberOfAnswers: 5,
         correctAnswer: "3/4",
         otherAnswers: ["4/4", "6/8", "4/3", "5/4"],
-    },
-    {
-        song: "Take Five",
-        src: "./assets/media/songs/take_five.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 4,
-        correctAnswer: "5/4",
-        otherAnswers: ["3/4", "6/8", "5/8"],
-    },
-    {
-        song: "Dean Town",
-        src: "./assets/media/songs/dean_town.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 6,
-        correctAnswer: "2/2",
-        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "4/8"],
-    },
-    {
-        song: "Money",
-        src: "./assets/media/songs/money.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 6,
-        correctAnswer: "7/4",
-        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2"],
-    },
-    {
-        song: "Electric Feel",
-        src: "./assets/media/songs/electric_feel.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 8,
-        correctAnswer: "6/4",
-        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
-    },
-    {
-        song: "We Are The Champions",
-        src: "./assets/media/songs/we_are_the_champions.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 8,
-        correctAnswer: "6/8",
-        otherAnswers: ["3/4", "12/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
-    },
+    }
+
 ]
 let mediumArr = [
     {
-        song: "Game Of Thrones theme",
-        src: "./assets/media/songs/game_of_thrones.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 5,
-        correctAnswer: "3/4",
-        otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
-    },
-    {
-        song: "Black Velvet Band",
-        src: "./assets/media/songs/black_velvet_band.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 5,
-        correctAnswer: "3/4",
-        otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
-    },
-    {
-        song: "Left Side",
-        src: "./assets/media/songs/left_side.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 5,
-        correctAnswer: "4/4",
-        otherAnswers: ["3/4", "6/8", "4/3", "5/4"],
-    },
-    {
-        song: "Piano Man",
-        src: "./assets/media/songs/piano_man.mp3",
-        difficulty: "easy",
-        numberOfAnswers: 5,
-        correctAnswer: "3/4",
-        otherAnswers: ["4/4", "6/8", "4/3", "5/4"],
-    },
-    {
         song: "Take Five",
         src: "./assets/media/songs/take_five.mp3",
         difficulty: "easy",
@@ -173,7 +102,50 @@ let mediumArr = [
         numberOfAnswers: 8,
         correctAnswer: "6/8",
         otherAnswers: ["3/4", "12/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
+    }
+]
+
+let hardArr = [
+    {
+        song: "Paranoid Android",
+        src: "./assets/media/songs/paranoid_android.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "7/8",
+        otherAnswers: ["3/4", "6/8", "5/8", "6/8", "4/3", "4/4", "4/8"],
     },
+    {
+        song: "Way you make me feel",
+        src: "./assets/media/songs/way_you_make_me_feel.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 6,
+        correctAnswer: "12/8",
+        otherAnswers: ["3/4", "6/8", "4/3" ,"4/8", "10/8"],
+    },
+    {
+        song: "Rocky road to dublin",
+        src: "./assets/media/songs/money.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 10,
+        correctAnswer: "9/8",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2", "6/8", "4/3", "4/4", "10/8"],
+    },
+    {
+        song: "All You need is love",
+        src: "./assets/media/songs/all_you_need.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "6/4",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2", "7/4", "7/8"]
+    },
+    {
+        song: "Everybody Hurts",
+        src: "./assets/media/songs/everybody_hurts.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "12/8",
+        otherAnswers: ["3/4", "12/8", "4/3", "4/4", "2/2", "7/4", "7/8"]
+    }
 ]
 
 let songArr 
