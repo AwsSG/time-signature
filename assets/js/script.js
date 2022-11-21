@@ -104,9 +104,11 @@ let songArr = [
 questionsCount.innerHTML = " 1 / " + songArr.length
 
 function setSong(song) {
-    videoContainer.innerHTML = `
-    <iframe id="video" width="560" height="315" src="${song.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-    `
+
+    // TO BE REMOVED
+    //videoContainer.innerHTML = `
+    //<iframe id="video" width="560" height="315" src="${song.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+    //`
 
     let answers = [...song.otherAnswers, song.correctAnswer]
 
@@ -145,7 +147,7 @@ function checkAnswer(e) {
         flipcard.classList.add('incorrect')
     }
 
-    videoContainer.innerHTML = '' 
+    // videoContainer.innerHTML = '' 
     answersEl.innerHTML = ''
 
     if (currentQuestion == songArr.length-1) {

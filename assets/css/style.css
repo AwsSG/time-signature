@@ -13,9 +13,7 @@ html {
 }
 
 body {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: 1fr auto;
+    min-height: 100vh;
     background-color: #25274D;
     font-family: 'Noto Sans Mende Kikakui', sans-serif;
 }
@@ -30,10 +28,6 @@ h1 {
 h2 {
     color: #fff;
     font-family: 'Noto Sans Mende Kikakui', sans-serif;
-}
-
-#how-to-play-logo {
-    padding: 50px 0 20px 0;
 }
 
 .starter-text {
@@ -59,7 +53,8 @@ h2 {
 
 #questions-count {
     width: 80%;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-size: 1.5em;
     text-align: right;
     color: white;
@@ -74,7 +69,7 @@ h2 {
 #flipcard {
     width: 500px;
     max-width: 98vw;
-    height: 95%;
+    height: 100%;
     background-color: white;
     border: 1px solid grey;
     border-radius: 2rem;
@@ -113,16 +108,16 @@ h2 {
     animation: flip-in 1s 1s ease-in forwards;
 }
 
-.video-container {
-    background-color: black;
+#flip-front {
     height: fit-content;
-    min-height: 300px;
+    min-height: 200px;
     width: 500px;
     max-width: 98vw;
     margin: 0 auto;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotateY(0deg);
+    border: 2px solid #fff;
 }
 
 .flip > div:nth-child(2) {
@@ -162,7 +157,7 @@ h2 {
     font-size: 1.8em;
     width: 35%;
     padding: 0.8em;
-    margin: 2rem;
+    margin: .5em 1em;
     text-align: center;
     border: 1px solid #000;
     border-radius: .8em;
@@ -338,7 +333,12 @@ main {
 }
 
 .main-content {
+    margin-top: 50px;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #explination-layout {
@@ -352,8 +352,7 @@ main {
 #play,
 #next,
 #play-again {
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
     margin: 1em auto;
     background-color: #fff;
     color: #000;
@@ -368,8 +367,6 @@ main {
 #next:focus,
 #play-again:hover,
 #play-again:focus {
-    width: 100%;
-    max-width: 200px;
     margin: 1em auto;
     padding: 15px;
     transition: 250ms;
@@ -444,8 +441,5 @@ footer > p {
         width: 80%;
         margin: 5px;
   }
-    #questions-count {
-        font-size: 2em;
-    }
 }
 
