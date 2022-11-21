@@ -8,7 +8,7 @@ const rightWrongEl = document.getElementById('right-wrong')
 const correctAnswerCard = document.getElementById('correct-answer')
 const scoreCounter = document.getElementById('score-counter')
 const questionsCount = document.getElementById('questions-count')
-const flipcard = document.getElementById('flip-container')
+const flipCard = document.getElementById('flip-container')
 const nextBtn = document.getElementById('next')
 const finalScore = document.getElementById('final-score')
 const showFinal = document.querySelectorAll('.final')
@@ -20,7 +20,7 @@ let score = 0
 let songArr = [
     {
         song: "Hysteria",
-        src: "https://www.youtube.com/embed/3dm_5qWWDV8",
+        src: "../assets/media/songs/hysteria.mp3",
         difficulty: "easy",
         numberOfAnswers: 4,
         correctAnswer: "4/4",
@@ -28,7 +28,7 @@ let songArr = [
     },
     {
         song: "Game Of Thrones theme",
-        src: "https://www.youtube.com/embed/F6SxzmEOHMI",
+        src: "../assets/media/songs/game_of_thrones.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "3/4",
@@ -36,7 +36,7 @@ let songArr = [
     },
     {
         song: "Black Velvet Band",
-        src: "https://www.youtube.com/embed/YytdBDpVSHc",
+        src: "../assets/media/songs/black_velvet_band.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "3/4",
@@ -44,7 +44,7 @@ let songArr = [
     },
     {
         song: "Left Side",
-        src: "https://www.youtube.com/embed/xAOkYFZvqDQ",
+        src: "../assets/media/songs/left_side.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "4/4",
@@ -52,7 +52,7 @@ let songArr = [
     },
     {
         song: "Piano Man",
-        src: "https://www.youtube.com/embed/5HWmQxy5C-Y",
+        src: "../assets/media/songs/piano_man.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "3/4",
@@ -60,7 +60,7 @@ let songArr = [
     },
     {
         song: "Take Five",
-        src: "https://www.youtube.com/embed/V2QHW-pEUYE",
+        src: "../assets/media/songs/take_five.mp3",
         difficulty: "easy",
         numberOfAnswers: 4,
         correctAnswer: "5/4",
@@ -68,7 +68,7 @@ let songArr = [
     },
     {
         song: "Dean Town",
-        src: "https://www.youtube.com/embed/le0BLAEO93g",
+        src: "../assets/media/songs/dean_town.mp3",
         difficulty: "easy",
         numberOfAnswers: 6,
         correctAnswer: "2/2",
@@ -76,7 +76,7 @@ let songArr = [
     },
     {
         song: "Money",
-        src: "https://www.youtube.com/embed/cpbbuaIA3Ds",
+        src: "../assets/media/songs/money.mp3",
         difficulty: "easy",
         numberOfAnswers: 6,
         correctAnswer: "7/4",
@@ -84,7 +84,7 @@ let songArr = [
     },
     {
         song: "Electric Feel",
-        src: "https://www.youtube.com/embed/fbkv5xOLvnA",
+        src: "../assets/media/songs/electric_feel.mp3",
         difficulty: "easy",
         numberOfAnswers: 8,
         correctAnswer: "6/4",
@@ -92,7 +92,7 @@ let songArr = [
     },
     {
         song: "We Are The Champions",
-        src: "https://www.youtube.com/embed/O71fetlkCZo",
+        src: "../assets/media/songs/we_are_the_champions.mp3",
         difficulty: "easy",
         numberOfAnswers: 8,
         correctAnswer: "6/8",
@@ -105,10 +105,7 @@ questionsCount.innerHTML = " 1 / " + songArr.length
 
 function setSong(song) {
 
-    // TO BE REMOVED
-    //videoContainer.innerHTML = `
-    //<iframe id="video" width="560" height="315" src="${song.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-    //`
+    wavesurfer.load(song.src);
 
     let answers = [...song.otherAnswers, song.correctAnswer]
 
@@ -140,11 +137,11 @@ function checkAnswer(e) {
         score += 1
         rightWrongEl.innerText = "Correct!" 
         scoreCounter.innerText = score
-        flipcard.classList.add('correct')
+        flipCard.classList.add('correct')
      } else {
         rightWrongEl.innerText = "Incorrect!" 
         scoreCounter.innerText = score
-        flipcard.classList.add('incorrect')
+        flipCard.classList.add('incorrect')
     }
 
     // videoContainer.innerHTML = '' 
@@ -164,7 +161,7 @@ function checkAnswer(e) {
     }
 
     correctAnswerCard.innerHTML = correctAnswer 
-    flipcard.classList.add('flip')
+    flipCard.classList.add('flip')
     nextBtn.addEventListener("click", nextQuestion)
 }
 
@@ -172,9 +169,9 @@ function checkAnswer(e) {
 function nextQuestion() {
     setSong(songArr[currentQuestion])
     resultsScreen.style.display = 'none'
-    flipcard.classList.remove('flip')
-    flipcard.classList.remove('correct')
-    flipcard.classList.remove('incorrect')
+    flipCard.classList.remove('flip')
+    flipCard.classList.remove('correct')
+    flipCard.classList.remove('incorrect')
     questionsCount.innerHTML = (currentQuestion+1) + " / " + songArr.length
 }
 
