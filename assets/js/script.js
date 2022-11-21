@@ -195,7 +195,10 @@ function setDiff() {
             } else if (diff === 'Medium') {
                 songArr = mediumArr
                 setSong(songArr[currentQuestion])
-            }
+            } else if (diff === 'Hard') {
+                songArr = hardArr
+                setSong(songArr[currentQuestion])
+            } 
             // Shows the current question number
             questionsCount.innerHTML = " 1 / " + songArr.length
         })
