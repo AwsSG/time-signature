@@ -20,4 +20,6 @@ Live website is deployed here: https://awssg.github.io/time-signature/
 
 Once on the page you click the "play" button at the bottom of the landing page or "play game" button at the bottom of the "Time Signatures Explained" page. Once the game starts you listen to the audio file by clicking the play button. Below you have multiple choice answers. Pick the answer you think is correct and once submitted a card will pop up telling you whether you got it right or wrong. If the answer is wrong you will be told what the right answer is. There is a question counter in the corner so you know how many questions are left to answer.
 
+## Credits
 
+Treble Clef icon by [Icons8](https://icons8.com/icon/mwHGeE4mJtWI/treble-clef)
