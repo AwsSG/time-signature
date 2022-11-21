@@ -67,9 +67,13 @@ h2 {
 }
 
 #flipcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 500px;
     max-width: 98vw;
-    height: 50%;
+    height: 100%;
     background-color: white;
     border: 1px solid grey;
     border-radius: 2rem;
