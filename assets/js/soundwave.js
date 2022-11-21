@@ -13,7 +13,7 @@ var wavesurfer = WaveSurfer.create({
     cursorColor: 'blue'
 });
 
-wavesurfer.load('../assets/media/songs/hysteria.mp3');
+wavesurfer.load('./assets/media/songs/hysteria.mp3');
 
 playBtn.onclick = function(){
     wavesurfer.playPause();

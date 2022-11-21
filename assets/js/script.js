@@ -20,7 +20,7 @@ let score = 0
 let songArr = [
     {
         song: "Hysteria",
-        src: "../assets/media/songs/hysteria.mp3",
+        src: "./assets/media/songs/hysteria.mp3",
         difficulty: "easy",
         numberOfAnswers: 4,
         correctAnswer: "4/4",
@@ -28,7 +28,7 @@ let songArr = [
     },
     {
         song: "Game Of Thrones theme",
-        src: "../assets/media/songs/game_of_thrones.mp3",
+        src: "./assets/media/songs/game_of_thrones.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "3/4",
@@ -36,7 +36,7 @@ let songArr = [
     },
     {
         song: "Black Velvet Band",
-        src: "../assets/media/songs/black_velvet_band.mp3",
+        src: "./assets/media/songs/black_velvet_band.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "3/4",
@@ -44,7 +44,7 @@ let songArr = [
     },
     {
         song: "Left Side",
-        src: "../assets/media/songs/left_side.mp3",
+        src: "./assets/media/songs/left_side.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "4/4",
@@ -52,7 +52,7 @@ let songArr = [
     },
     {
         song: "Piano Man",
-        src: "../assets/media/songs/piano_man.mp3",
+        src: "./assets/media/songs/piano_man.mp3",
         difficulty: "easy",
         numberOfAnswers: 5,
         correctAnswer: "3/4",
@@ -60,7 +60,7 @@ let songArr = [
     },
     {
         song: "Take Five",
-        src: "../assets/media/songs/take_five.mp3",
+        src: "./assets/media/songs/take_five.mp3",
         difficulty: "easy",
         numberOfAnswers: 4,
         correctAnswer: "5/4",
@@ -68,7 +68,7 @@ let songArr = [
     },
     {
         song: "Dean Town",
-        src: "../assets/media/songs/dean_town.mp3",
+        src: "./assets/media/songs/dean_town.mp3",
         difficulty: "easy",
         numberOfAnswers: 6,
         correctAnswer: "2/2",
@@ -76,7 +76,7 @@ let songArr = [
     },
     {
         song: "Money",
-        src: "../assets/media/songs/money.mp3",
+        src: "./assets/media/songs/money.mp3",
         difficulty: "easy",
         numberOfAnswers: 6,
         correctAnswer: "7/4",
@@ -84,7 +84,7 @@ let songArr = [
     },
     {
         song: "Electric Feel",
-        src: "../assets/media/songs/electric_feel.mp3",
+        src: "./assets/media/songs/electric_feel.mp3",
         difficulty: "easy",
         numberOfAnswers: 8,
         correctAnswer: "6/4",
@@ -92,7 +92,7 @@ let songArr = [
     },
     {
         song: "We Are The Champions",
-        src: "../assets/media/songs/we_are_the_champions.mp3",
+        src: "./assets/media/songs/we_are_the_champions.mp3",
         difficulty: "easy",
         numberOfAnswers: 8,
         correctAnswer: "6/8",
