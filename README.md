@@ -22,8 +22,6 @@ Once on the page you click the "play" button at the bottom of the landing page o
 
 ## Credits
 
-
-
 Team members:
 - Aws Sabah Gheni
 - Eoghan Behan
