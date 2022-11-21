@@ -142,6 +142,19 @@ h2 {
     }
 }
 
+.diff-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #25274D;
+}
+
 .answers-container {
     max-width: 100vw;
     display: flex;

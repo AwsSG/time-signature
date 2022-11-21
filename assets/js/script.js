@@ -12,12 +12,14 @@ const flipCard = document.getElementById('flip-container')
 const nextBtn = document.getElementById('next')
 const finalScore = document.getElementById('final-score')
 const showFinal = document.querySelectorAll('.final')
+const diffScreen = document.querySelector('.diff-screen')
+const diffBtns = document.querySelectorAll('.diff-btns')
 
 let correctAnswer;
 let currentQuestion = 0
 let score = 0
 
-let songArr = [
+let easyArr = [
     {
         song: "Hysteria",
         src: "./assets/media/songs/hysteria.mp3",
@@ -99,9 +101,109 @@ let songArr = [
         otherAnswers: ["3/4", "12/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
     },
 ]
+let mediumArr = [
+    {
+        song: "Game Of Thrones theme",
+        src: "./assets/media/songs/game_of_thrones.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 5,
+        correctAnswer: "3/4",
+        otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
+    },
+    {
+        song: "Black Velvet Band",
+        src: "./assets/media/songs/black_velvet_band.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 5,
+        correctAnswer: "3/4",
+        otherAnswers: ["4/4", "6/8", "4/3", "6/3"],
+    },
+    {
+        song: "Left Side",
+        src: "./assets/media/songs/left_side.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 5,
+        correctAnswer: "4/4",
+        otherAnswers: ["3/4", "6/8", "4/3", "5/4"],
+    },
+    {
+        song: "Piano Man",
+        src: "./assets/media/songs/piano_man.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 5,
+        correctAnswer: "3/4",
+        otherAnswers: ["4/4", "6/8", "4/3", "5/4"],
+    },
+    {
+        song: "Take Five",
+        src: "./assets/media/songs/take_five.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 4,
+        correctAnswer: "5/4",
+        otherAnswers: ["3/4", "6/8", "5/8"],
+    },
+    {
+        song: "Dean Town",
+        src: "./assets/media/songs/dean_town.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 6,
+        correctAnswer: "2/2",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "4/8"],
+    },
+    {
+        song: "Money",
+        src: "./assets/media/songs/money.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 6,
+        correctAnswer: "7/4",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2"],
+    },
+    {
+        song: "Electric Feel",
+        src: "./assets/media/songs/electric_feel.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "6/4",
+        otherAnswers: ["3/4", "6/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
+    },
+    {
+        song: "We Are The Champions",
+        src: "./assets/media/songs/we_are_the_champions.mp3",
+        difficulty: "easy",
+        numberOfAnswers: 8,
+        correctAnswer: "6/8",
+        otherAnswers: ["3/4", "12/8", "4/3", "4/4", "2/2", "7/4", "7/8"],
+    },
+]
 
-// Shows the current question number
-questionsCount.innerHTML = " 1 / " + songArr.length
+let songArr 
+
+setDiff()
+
+function setDiff() {
+    let diff
+
+    diffBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            diff = btn.innerText
+            diffScreen.style.display = 'none'
+            console.log(diff)
+            if (diff === 'Easy') {
+                songArr = easyArr
+                setSong(songArr[currentQuestion])
+                questionsCount.innerHTML = " 1 / " + songArr.length
+            } else if (diff === 'Medium') {
+                songArr = mediumArr
+                setSong(songArr[currentQuestion])
+            }
+            // Shows the current question number
+            questionsCount.innerHTML = " 1 / " + songArr.length
+        })
+    })
+
+}
+
+
 
 function setSong(song) {
 
@@ -188,5 +290,5 @@ function shuffleArr(arr) {
     }
 }
 
-setSong(songArr[currentQuestion])
+// setSong(songArr[currentQuestion])
 
